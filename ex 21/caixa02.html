@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            background-color: rgb(75, 90, 219);
+        }
+        header {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        h1 {
+            background-color: lightcyan;
+            font-size: 2em;
+            margin: 0;
+        }
+
+        nav {
+            background-color: rgb(135, 207, 216);
+            padding: 5px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav > a {
+    
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            
+        }
+
+        nav:hover > a {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+           
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        aside {
+            background-color: rgb(114, 114, 112);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: rgb(115, 154, 167);
+            padding: 2px;
+            
+            text-align: center;
+            text-decoration: underline ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>Noticias das ultimas horas</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo alias odit dolores natus enim tenetur ut maiores eaque reprehenderit autem animi qui voluptas nesciunt, in quam, officia temporibus. Est, at?</p>
+            </article>
+            <aside>Artigo escrito por João Silva</aside>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Marcos Paulo</p>
+
+    </footer>
+</body>
+</html>
