@@ -13,6 +13,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
         caption {
             font-size: 1.5em;
@@ -21,6 +22,12 @@
 
         tbody tr:nth-child(2n) {
             background-color: lightgrey;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            
         }
 
 
