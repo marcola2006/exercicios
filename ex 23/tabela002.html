@@ -14,6 +14,16 @@
             width: 600px;
             border-collapse: collapse;
         }
+        caption {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: lightgrey;
+        }
+
+
         td, th {
             border: 1px solid black;
             padding: 10px;
@@ -44,12 +54,13 @@
 
     -->
         <table>
+            <caption>População dos Países da América do Sul em 2025</caption>
             <thead>
                 <tr>
-                    <th>#</th>
-                    <th>País</th>
-                    <th>População</th>
-                    <th>Ano</th>
+                    <th scope="col">#</th>
+                    <th scope="col">País</th>
+                    <th scope="col">População</th>
+                    <th scope="col">Ano</th>
                 </tr>
             </thead>
             <tbody>
@@ -120,9 +131,9 @@
             </tbody>
             <tfoot>
                <th></th>
-               <th>Total de Habitantes</th>
-                <th>413.894.434</th>
-                <th>2025</th>
+               <th scope="row">Total de Habitantes</th>
+                <th scope="row">413.894.434</th>
+                <th scope="row">2025</th>
 
 
 
