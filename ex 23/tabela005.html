@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de colunas</title>
+    <style>
+           body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: lightgrey;
+            margin-bottom: 20px;
+            width: 400px;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+         td {
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .destaque {
+            background-color: rgb(73, 99, 86);
+            font-weight: bold;
+            color: white;
+            
+        }
+
+        .conteudo {
+            background-color: rgb(179, 174, 174);
+        }
+
+        div {
+            overflow-x: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Agrupamento de colunas</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <colgroup>
+            <col class="destaque" span="2">
+            <col class="conteudo" span="2">
+
+        </colgroup>
+
+
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="colgroup">Nomes</th>
+                <th scope="colgroup">Filmes</th>
+                <th scope="colgroup"> Nota</th>
+            </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana</td>
+                <td>O Diabo Veste Prada</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Orgulho e Preconceito</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>Frozen</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Daniel</td>
+                <td>O Senhor dos Anéis</td>
+                <td>9.0</td>
+            </tr>
+            <tr>
+                <td>Eduardo</td>
+                <td>Matrix</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td>Felipe</td>
+                <td>Inception</td>
+                <td>9.5</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+    <h1>Tabelas Responsivas</h1>
+    <p>çLorem ipsum dolor sit amet consectetur adipisicing elit. Facere, placeat, quae iure reiciendis commodi quod exercitationem itaque dignissimos est dolorum ducimus ad error eaque corporis suscipit magnam maxime pariatur adipisci! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda facere repudiandae eaque ullam molestias at necessitatibus veritatis pariatur quas sapiente aut voluptas velit, aliquid qui eos impedit distinctio consequuntur obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum fuga sapiente magni, dolor dolore deleniti est asperiores laborum, atque, natus cumque fugiat facilis quia temporibus at earum laudantium eum. Veritatis!</p>
+
+    <div>
+        <table>
+            <caption>Vendas de Produtos</caption>
+            <thead><tr>
+                <th>Produto</th>
+                <th>Janeiro</th>
+                <th>Fevereiro</th>
+                <th>Março</th>
+                <th>Abril</th>
+                <th>Maio</th>
+                <th>Junho</th>
+                <th>Julho</th>
+                <th>Agosto</th>
+                <th>Setembro</th>
+                <th>Outubro</th>
+                <th>Novembro</th>
+                <th>Dezembro</th>
+            </tr></thead>
+            <tbody>
+                <tr>
+                    <td>Produto A</td>
+                    <td>150</td>
+                    <td>200</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>550</td>
+                    <td>600</td>
+                    <td>650</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>Produto B</td>
+                    <td>100</td>
+                    <td>150</td>
+                    <td>200</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>550</td>
+                    <td>600</td>
+                    <td>650</td>
+                </tr>
+                <tr>
+                    <td>Produto C</td>
+                    <td>200</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>550</td>
+                    <td>600</td>
+                    <td>650</td>
+                    <td>700</td>
+                    <td>750</td>
+                </tr>
+                <tr>
+                    <td>Produto D</td>
+                    <td>250</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>550</td>
+                    <td>600</td>
+                    <td>650</td>
+                    <td>700</td>
+                    <td>750</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <td>Produto E</td>
+                    <td>300</td>
+                    <td>350</td>
+                    <td>400</td>
+                    <td>450</td>
+                    <td>500</td>
+                    <td>550</td>
+                    <td>600</td>
+                    <td>650</td>
+                    <td>700</td>
+                    <td>750</td>
+                    <td>800</td>
+                    <td>850</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
