@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: lightgrey;
+            margin-bottom: 20px;
+            width: 400px;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+         td {
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #important {
+            background-color: rgb(133, 133, 133);
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabelas</h1>
+    <table>
+        <caption>Filmes favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+    </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Interestelar</td>
+                <td>Matrix</td>
+                <td>Inception</td>
+            </tr>
+            <tr>
+                <td>Carla Dias</td>
+                <td>Titanic</td>
+                <td>Avatar</td>
+                <td>Frozen</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Daniel Oliveira</td>
+                <td>O Senhor dos Anéis</td>
+                <td>Harry Potter</td>
+                <td>Star Wars</td>
+            </tr>
+            <tr>
+                <td>Daniel Oliveira</td>
+                <td>Frankestein</td>
+                <td>Amnesia</td>
+                <td>Oldboy</td>
+            </tr>
+            <tr>
+                <td>Eduardo Lima</td>
+                <td>Clube da Luta</td>
+                <td>O Poderoso Chefão</td>
+                <td>Scarface</td>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th id="important" rowspan="2">Área</th>
+                <th id="important" rowspan="2">Disciplina</th>
+                <th id="important" colspan="2">Notas</th>
+                <th id="important" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th id="important">Nota 1</th>
+                <th id="important">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td>5.0</td>
+                <td>7.0</td>
+                <td>6.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>6.0</td>
+                <td>8.0</td>
+                <td>7.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td>7.0</td>
+                <td>9.0</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>5.0</td>
+                <td>7.0</td>
+                <td>6.0</td>
+            </tr>
+            <tr>
+                <th id="important" colspan="4">Média de Exatas</th>
+                <td id="important">7.0</td>
+            </tr>
+            <tr>
+                <th  rowspan="2">Humanas</th>
+                <td>história</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>10</td>
+                <td>9.0</td>
+                <td>9.5</td>
+            </tr>
+            <tr>
+                <th id="important" colspan="4">Média de Humanas</th>
+                <td id="important">9.0</td>
+            </tr>
+            
+        </tbody>
+
+    </table>
+    
+    
+</body>
+</html>
