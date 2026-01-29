@@ -1,0 +1,8 @@
+@charset "UTF-8";
+/* Telas maiores */
+
+body {
+    background: url(../cev-landscape.jpg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}

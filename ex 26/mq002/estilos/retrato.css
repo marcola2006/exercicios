@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/* Telas menores */
+
+body {
+    background: url(../cev-portrait.jpg);
+    background-position: center bottom;
+}
